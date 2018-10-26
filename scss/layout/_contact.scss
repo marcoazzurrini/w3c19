@@ -1,0 +1,25 @@
+#contact {
+    &__list {
+        @extend %mar-pad;
+        color: color(grey);
+
+        i {
+            color: color(real-white);
+            padding-right: em(12px);
+            padding-bottom: em(8px);
+            text-align: center;
+            width: em(18px);
+
+        }
+    }
+
+    form {
+        input {
+            display: block;
+            width: 100%;
+            padding: em(15px) 0;
+            margin: em(10px) 0;
+        }
+
+    }
+}

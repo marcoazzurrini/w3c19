@@ -1,0 +1,60 @@
+// DESKTOP VERSION
+
+.container {
+    @include mq(desktop) {
+        width: calc(100vw - 190px);
+        padding-left: em(110px);
+    }
+}
+
+// MAIN HEADING
+
+#home {
+    @include mq(desktop) {
+        &__title {
+            span {
+                display: initial;
+            }
+        }
+    }
+}
+
+// EXPERIENCE
+
+.experience__list {
+    @include mq(desktop) {
+        @include flexy(flex, row, space-around, center);
+
+        li {
+            padding: em(15px);
+        }
+    }
+}
+
+// PRICE
+
+.price {
+    @include mq(desktop) {
+        padding-top: em(30px);
+        @include flexy(flex, row, space-around, center);
+    
+        &__card {
+            margin: em(10px);
+            box-sizing: border-box;
+        }
+    
+    }
+}
+
+// GALLERY
+
+#showcase {
+    @include mq(desktop) {
+        @include flexy(flex, row, space-around, center);
+            &__col {
+                flex: 1;
+                padding-right: em(10px);
+                box-sizing: border-box;
+            }
+    }
+}

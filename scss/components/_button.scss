@@ -1,0 +1,22 @@
+.btn {
+    padding: em(16px) em(20px);
+    background: #f1f1f1;
+    color: color(black);
+
+    i {
+        padding-right: em(5px);
+    }
+}
+
+.price__btn {
+    background: darken(color(white), 5%);
+    padding: em(20px) 0;
+
+    &--s {
+        display: inline-block;
+        background: color(real-white);
+        padding: em(10px) em(15px);
+        color: color(black);
+    }
+}
+

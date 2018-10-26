@@ -1,0 +1,131 @@
+#about {
+    &__title {
+        border-bottom: 1px solid color(grey);
+        display: inline-block;
+        padding-right: em(18px);
+        padding-bottom: em(10px);
+    }
+}
+
+.about__skill {
+    letter-spacing: em(4px);
+    padding: 0 0 em(30px) 0;
+
+    .bar-back {
+        width: 100%;
+        height: 28px;
+        background: color(real-white);
+    }
+
+    .bar-front-1 {
+        @extend %grey;
+        width: 95%;
+    }
+    .bar-front-2 {
+        @extend %grey;
+        width: 85%;
+    }
+    .bar-front-3 {
+        @extend %grey;
+        width: 75%;
+    }
+}
+
+// EXPERIENCE
+
+.experience {
+    width: 100%;
+    background: color(white);
+    padding: em(20px);
+    margin-bottom: em(40px);
+    box-sizing: border-box;
+    @include flexy(flex, column, space-around, center);
+
+
+    &__list {
+        @extend %mar-pad;
+        text-align: center;
+
+        li p {
+            color: color(black);
+            font-size: em(17px);
+
+            &:nth-child(1) {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// PRICING
+
+.price {
+    padding-top: em(30px);
+    &__card {
+        width: 100%;
+        text-align: center;
+        background: color(real-white);
+        opacity: .6;
+        margin-bottom: em(10px);
+        @extend %transition;
+        &:hover {
+            opacity: 1;
+        }
+        
+
+        h3 {
+            @extend %border-b;
+            padding: em(20px) 0;
+            margin: 0;
+            background: color(dark-grey);
+        }
+        p {
+            color: color(black);
+            padding: em(20px) 0;
+            margin: 0;
+            @extend %border-b;
+
+            span {
+                display: block;
+                font-size: em(40px);
+                font-weight: bold;
+            }
+        }
+
+    }
+}
+
+// REPUTATION
+
+.reputation {
+        &__list {
+            @extend %mar-pad;
+
+        &__item {
+            @include gridy($col: 1fr 3fr, $row: 1fr 1fr);
+            grid-template-areas: 
+            "img p1"
+            "img p2";
+
+            img {
+                @include r-roundy;
+                grid-area: img;
+                align-self: center;
+            }
+
+            &--1 {
+                @extend %mar-pad;
+                grid-area: p1;
+                align-self: end;
+                text-decoration: underline;
+            }
+
+            &--2 {
+                @extend %mar-pad;
+                grid-area: p2;
+                align-self: start;
+            }
+        }
+    }
+}
+

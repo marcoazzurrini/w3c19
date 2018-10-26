@@ -1,0 +1,64 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+
+    &__avatar {
+        display: none;
+    }
+
+    &__list {
+        @extend %mar-pad;
+        @include flexy(flex, $just: space-around, $ali: center);
+        width: 100%;
+    }
+
+    &__item {
+        
+        a {
+        display: inline-block;
+        padding-top: em(8px);
+        text-transform: uppercase;
+
+        i {
+            display: none;
+        }
+    }
+}
+
+    @include nav-mq(not-mobile) {
+        &__item {
+        display: block;
+        width: 100%;
+        
+            &:hover {
+                background: color(black);
+            }
+
+            &--current {
+                background: color(black);
+            }
+        }
+
+        &__avatar {
+            display: initial;
+            width: 100%;
+        }
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item a {
+            @include flexy(flex, column, space-around, center);
+            padding-top: em(22.5px);
+            padding-bottom: em(22.5px);
+
+            i {
+                display: initial;
+            }
+        }
+    }
+}

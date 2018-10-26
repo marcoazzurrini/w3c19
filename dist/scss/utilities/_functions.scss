@@ -1,0 +1,12 @@
+// PX TO EM
+
+@function em($pixels, $context: $base-font) {
+    @return ($pixels / $context) * 1em;
+}
+
+// COLOR MAP RETRIEVER
+
+@function color($color) {
+    @return (map-get($colors, $color));
+}
+

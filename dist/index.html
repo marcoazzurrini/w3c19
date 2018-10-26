@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W3C 19 | SASS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <aside class="navbar">
+        <img class="navbar__avatar" src="images/avatar_smoke.jpg" alt="gianni arrigucci">
+        <ul class="navbar__list">
+            <li class="navbar__item navbar__item--current"><a href="#home"><i class="fas fa-home fa-2x"></i> Home</a></li>
+            <li class="navbar__item"><a href="#about"><i class="fas fa-user fa-2x"></i> About</a></li>
+            <li class="navbar__item"><a href="#showcase"><i class="fas fa-eye fa-2x"></i> Photos</a></li>
+            <li class="navbar__item"><a href="#contact"><i class="fas fa-envelope fa-2x"></i> Contact</a></li>
+        </ul>
+    </aside>
+
+    <div class="container">
+        <!-- HOME -->
+
+        <div id="home">
+            <h1 id="home__title"><span>I`m</span> Gianni Arrigucci</h1>
+            <p id="home__subtitle">Photographer and Rinalda`s Grandson</p>
+            <img id="home__banner" src="images/man_smoke.jpg" alt="gianni arrigucci">
+        </div>
+
+        <!-- ABOUT -->
+
+        <div id="about">
+            <h2 id="about__title">Gianni Arrigucci</h2>
+            <p id="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque aut sint
+                maiores, mollitia
+                impedit dicta deserunt accusamus at sit quasi omnis? Libero voluptate deleniti tempora, dolores
+                voluptatem tenetur, velit, impedit ratione nemo earum id vel quae maiores ipsa et.</p>
+            <h3 id="about__subtitle">My Skills</h3>
+            <ul class="about__skill">
+                <li class="about__skill--item">
+                    <p>Photography</p>
+                    <div class="bar-back">
+                        <div class="bar-front-1"></div>
+                    </div>
+                </li>
+                <li class="about__skill--item">
+                    <p>Web Design</p>
+                    <div class="bar-back">
+                        <div class="bar-front-2"></div>
+                    </div>
+                </li>
+                <li class="about__skill--item">
+                    <p>Rinalda</p>
+                    <div class="bar-back">
+                        <div class="bar-front-3"></div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- EXPERIENCE -->
+
+            <div class="experience">
+                <ul class="experience__list">
+                    <li>
+                        <p>11+</p>
+                        <p>Partners</p>
+                    </li>
+                    <li>
+                        <p>55+</p>
+                        <p>Rinalda Communist</p>
+                    </li>
+                    <li>
+                        <p>89+</p>
+                        <p>Happy Rinaldas</p>
+                    </li>
+                    <li>
+                        <p>150+</p>
+                        <p>Rinalda Chats</p>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="btn"><i class="fas fa-download"></i>Download Resume</a>
+        </div>
+
+        <!-- PRICE -->
+
+        <div class="price">
+            <div class="price__card">
+                <h3>Basic</h3>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p><span>$10</span> per month</p>
+                <div class="price__btn"><a href="#" class="price__btn--s">Sign Up</a></div>
+            </div>
+
+            <div class="price__card">
+                <h3>Pro</h3>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p><span>$25</span> per month</p>
+                <div class="price__btn"><a href="#" class="price__btn--s">Sign Up</a></div>
+            </div>
+        </div>
+
+        <!-- REPUTATION -->
+
+        <div class="reputation">
+            <h3>My Reputation</h3>
+            <ul class="reputation__list">
+                <li class="reputation__list__item">
+                    <img src="images/avatar_g2.jpg" alt="">
+                    <p class="reputation__list__item--1">Rinalda. <span>Gianni`s Grandmother</span></p>
+                    <p class="reputation__list__item--2">Gianni truly is a good partigiano.</p>
+                </li>
+                <li class="reputation__list__item">
+                    <img src="images/bandmember.jpg" alt="">
+                    <p class="reputation__list__item--1">Osvaldo. <span>Azzu`s Grandfather</span></p>
+                    <p class="reputation__list__item--2">Gianni keeps saying the river doesn`t belong to me. Bastard.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- GALLERY -->
+
+        <h2>My Photos</h2>
+
+        <div id="showcase">
+            <div id="showcase__col">
+                <img src="images/wedding.jpg" alt="">
+                <img src="images/rocks.jpg" alt="">
+                <img src="images/sailboat.jpg" alt="">
+            </div>
+            <div id="showcase__col">
+                <img src="images/underwater.jpg" alt="">
+                <img src="images/chef.jpg" alt="">
+                <img src="images/wedding.jpg" alt="">
+                <img src="images/p6.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+
+        <div id="contact">
+            <h2>Contact Me</h2>
+
+            <ul id="contact__list">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i> Bucine, AR</li>
+                <li><i class="fas fa-phone fa-2x"></i> Phone: +012345678</li>
+                <li><i class="fas fa-envelope fa-2x"></i> Email: pippo@bappo.ar</li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Message">
+                <button class="btn"><i class="fas fa-paper-plane"></i>SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+            <p>Powered by <span>Marco Azzurrini</span></p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

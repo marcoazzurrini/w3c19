@@ -1,0 +1,25 @@
+// COLORS
+
+$colors: (
+    black           : #000,
+    real-white      : #fff,
+    white           : #f1f1f1,
+    grey            : #616161,
+    dark-grey       : #757575,
+    x-dark-grey     : #222,
+    light-grey      : #ddd,
+);
+
+// FONTS
+
+$font-url--google   : 'https://fonts.googleapis.com/css?family=Montserrat';
+$font-primary       : 'Montserrat', sans-serif;
+$base-font          : 16px;
+
+// WIDTH
+
+$max-width          : 980px;
+
+// BREAKPOINTS
+
+$not-mobile         : 600px;

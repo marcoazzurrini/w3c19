@@ -1,0 +1,18 @@
+#home {
+    text-align: center;
+    padding-top: em(40px);
+    
+
+    &__title {
+        margin: 0;
+
+        span {
+            display: none;
+        }
+    }
+
+    &__subtitle {
+       color: color(real-white);
+       font-weight: 400;
+    }
+}

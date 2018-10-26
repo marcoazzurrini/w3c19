@@ -1,0 +1,26 @@
+footer {
+    ul {
+        @include flexy(flex, row, $ali: center);
+        padding-top: em(50px);
+        padding-left: 0;
+
+        i {
+            padding: em(2px);
+            color: color(grey);
+            @extend %transition;
+
+            &:hover {
+                color: color(white);
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        padding-bottom: em(15px);
+
+        span {
+            text-decoration: underline;
+        }
+    }
+}

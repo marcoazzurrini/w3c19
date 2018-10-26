@@ -1,0 +1,59 @@
+// FLEXY
+
+@mixin flexy
+($disp,
+ $dir: null,
+ $just: null,
+ $ali: null,) {
+    display: $disp;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $ali;
+}
+
+// GRIDY
+
+@mixin gridy(
+    $disp: grid,
+    $col: null,
+    $row: null,
+    $gap: null,
+) {
+    display: $disp;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-gap: $gap;
+}
+
+// NAVBAR MEDIA
+
+@mixin nav-mq($break) {
+    @if $break == "not-mobile" {
+        @media (min-width: $not-mobile) {
+            height: 100vh;
+            width: em(120px);
+            left: 0;
+            background: color(x-dark-grey);
+            @content;
+        }
+    }
+}
+
+// R-ROUNDY
+
+@mixin r-roundy {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+// MEDIA QUERY
+
+@mixin mq($break) {
+    @if $break == desktop {
+        @media (min-width: $not-mobile) {
+            @content;
+        }
+        
+    }
+}
